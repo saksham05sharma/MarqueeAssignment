@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# YourShelf
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+YourShelf is a React application that allows users to search for books using the OpenLibrary API and add them to their personal bookshelf stored in the browser's local storage.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Setup Instructions](#setup-instructions)
+- [Running the Application](#running-the-application)
+- [Project Structure](#project-structure)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Search for books by title, author, or keyword.
+- View search results and book details.
+- Add books to a personal bookshelf.
+- View and manage books in the bookshelf.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Prerequisites
 
-### `npm test`
+Before you begin, ensure you have met the following requirements:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js and npm installed. You can download them from [nodejs.org](https://nodejs.org/).
+- A code editor, such as Visual Studio Code.
 
-### `npm run build`
+## Setup Instructions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To set up the project locally, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/your-username/your-repository-name.git
 
-### `npm run eject`
+2. **Navigate to the project directory:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   cd personal-bookshelf
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Install the dependencies:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Running the Application
 
-## Learn More
+To run the application on your local machine, follow these steps:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Start the development server:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   npm start
 
-### Code Splitting
+2. **Open your browser and navigate to:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   http://localhost:3000
 
-### Analyzing the Bundle Size
+   The application should now be running, and you can start searching for books and adding them to your bookshelf.
+   
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Here's a brief overview of the project structure:
 
-### Making a Progressive Web App
+personal-bookshelf/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── BookItem.js
+│   │   ├── Bookshelf.js
+│   │   ├── Header.js
+│   │   └── SearchBar.js
+│   ├── pages/
+│   │   ├── BookSearchPage.js
+│   │   └── BookshelfPage.js
+│   ├── styles/
+│   │   └── styles.css
+│   ├── App.js
+│   └── index.js
+├── .gitignore
+├── package.json
+└── README.md
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. **public/:** 
 
-### Advanced Configuration
+   Contains the HTML file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. **src/components/:** 
 
-### Deployment
+   Contains reusable React components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3. **src/pages/:** 
 
-### `npm run build` fails to minify
+   Contains the main pages of the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. **src/styles/:** 
+
+   Contains the CSS styles for the application.
+
+5. **App.js:** 
+
+   The root component.
+
+6. **index.js:** 
+
+The entry point of the application.
